@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Bicycle illustration</title>
+  <desc id="desc">A simple green bicycle with two wheels, a frame, handlebars and a saddle.</desc>
+  <rect width="640" height="400" rx="28" fill="#e8f0e3"/>
+  <circle cx="155" cy="275" r="91" fill="none" stroke="#244f40" stroke-width="13"/>
+  <circle cx="485" cy="275" r="91" fill="none" stroke="#244f40" stroke-width="13"/>
+  <circle cx="155" cy="275" r="9" fill="#244f40"/>
+  <circle cx="485" cy="275" r="9" fill="#244f40"/>
+  <path d="M155 275 L260 145 L355 275 L155 275 L315 275 L485 275 L355 275 L405 155" fill="none" stroke="#4f8b5b" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M240 145 H300 M260 145 L238 126" stroke="#244f40" stroke-width="13" stroke-linecap="round"/>
+  <path d="M390 155 H430 L447 139" fill="none" stroke="#244f40" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M345 275 L315 275" stroke="#244f40" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="355" cy="275" r="15" fill="#d9a441"/>
+  <path d="M355 275 L386 243 M355 275 L324 304" stroke="#244f40" stroke-width="9" stroke-linecap="round"/>
+  <path d="M110 365 H530" stroke="#c5d8bd" stroke-width="8" stroke-linecap="round"/>
+</svg>

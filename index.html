@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Cycle's Saturday bicycle repair clinic. Book a time slot and estimate your repair cost.">
+  <title>Campus Cycle | Saturday Repair Clinic</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Campus Cycle home">Campus<span>Cycle</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#clinic">The clinic</a>
+      <a href="#prices">Prices</a>
+      <a href="#estimate">Estimate</a>
+      <a href="#book">Book a slot</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="clinic">
+      <div class="hero-copy">
+        <p class="eyebrow">CAMPUS CYCLE · COMMUNITY REPAIR</p>
+        <h1>Give your bike a little care.</h1>
+        <p class="promise">Bring your bicycle to our Saturday repair clinic and get ready to ride with confidence.</p>
+        <div class="event-details">
+          <p><strong>When</strong><span>Saturday, 15:00–17:00</span></p>
+          <p><strong>Where</strong><span>Workshop B, Student Centre</span></p>
+        </div>
+        <a class="button-link" href="#book">Book your slot</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/bicycle.svg" alt="Illustration of a bicycle with two wheels, a frame, handlebars and a saddle">
+      </div>
+    </section>
+
+    <section class="section" id="prices">
+      <div class="section-heading">
+        <p class="eyebrow">SIMPLE AND CLEAR</p>
+        <h2>Our prices</h2>
+        <p>Choose the service that suits your bicycle.</p>
+      </div>
+      <div class="price-grid">
+        <article class="price-card">
+          <span class="price">€10</span>
+          <h3>A bicycle check</h3>
+          <p>A basic check to see how your bicycle is doing.</p>
+        </article>
+        <article class="price-card featured">
+          <span class="price">€5</span>
+          <h3>Each small repair</h3>
+          <p>Add €5 for every small repair you need.</p>
+        </article>
+        <article class="price-card">
+          <span class="price">€45</span>
+          <h3>A full service</h3>
+          <p>A more complete service for your bicycle.</p>
+        </article>
+      </div>
+
+      <div class="estimate-panel" id="estimate">
+        <div>
+          <p class="eyebrow">PLAN YOUR VISIT</p>
+          <h3>Estimate your price</h3>
+          <p>Choose a service and add the number of small repairs.</p>
+        </div>
+        <div class="estimate-controls">
+          <label for="service">Service</label>
+          <select id="service">
+            <option value="10">A check</option>
+            <option value="45">A full service</option>
+          </select>
+
+          <label for="repairs">Number of small repairs</label>
+          <input id="repairs" type="number" min="0" step="1" value="0" inputmode="numeric">
+
+          <p class="estimate-total">Your estimate: <output id="total" aria-live="polite">EUR 10</output></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="book">
+      <div class="booking-intro">
+        <p class="eyebrow">SAVE YOUR MOMENT</p>
+        <h2>Book a slot</h2>
+        <p>Choose one of the available start times for the Saturday clinic.</p>
+        <p class="small-note">This is a practice page. Your form submission will not create a real booking.</p>
+      </div>
+      <form id="booking">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+
+        <label for="slot">Time slot</label>
+        <select id="slot" name="slot" required>
+          <option>15:00</option>
+          <option>15:30</option>
+          <option>16:00</option>
+          <option>16:30</option>
+        </select>
+
+        <button type="submit">Book this slot</button>
+        <p id="message" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Campus Cycle <span aria-hidden="true">·</span> Personal code: <strong>BW-VJPJ</strong></p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
