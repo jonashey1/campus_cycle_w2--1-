@@ -12,9 +12,21 @@ const service = document.querySelector('#service');
 const repairs = document.querySelector('#repairs');
 const total = document.querySelector('#total');
 
+function sanitizeRepairCount(value) {
+  const parsed = Number(value);
+
+  if (!Number.isFinite(parsed)) {
+    return 0;
+  }
+
+  return Math.max(0, Math.floor(parsed));
+}
+
 function showEstimate() {
-  const count = Math.max(0, Math.floor(Number(repairs.value) || 0));
-  total.textContent = 'EUR ' + (Number(service.value) + count * 5);
+  const count = sanitizeRepairCount(repairs.value);
+  const basePrice = Number(service.value) || 0;
+
+  total.textContent = 'EUR ' + (basePrice + count * 5);
 }
 
 service.addEventListener('change', showEstimate);
