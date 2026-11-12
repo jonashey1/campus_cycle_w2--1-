@@ -258,6 +258,10 @@ select {
 
 .estimate-total {
   margin: 1rem 0 0;
+  padding: 0.9rem 1rem;
+  border-left: 5px solid #2e684c;
+  border-radius: 8px;
+  background: #fff;
   font-size: 1.1rem;
 }
 
@@ -382,4 +386,8 @@ footer p {
   button {
     max-width: 100%;
   }
+}
+.price {
+  color: #0b6e4f;
+  font-weight: 800;
 }
